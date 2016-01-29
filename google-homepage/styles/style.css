@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.nav-menu {
+	margin-top: 10px;
+	line-height: 24px;
+	font-family: "DejaVu Sans";
+	float:right;
+	font-size: 13px;
+	/*background-color: #855;*/
+	display: block;
+}
+.nav-menu li {
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 8px;
+}
+
+#opacity {
+	opacity: 55;
+}
+
+.search-form  {
+	position: relative;
+	clear: right;
+	/*background-color: #bbb;*/
+	padding-top: 135px;
+}
+
+.search-form img {
+	display: block;
+	margin: auto;
+}
+
+.wrap {
+	text-align: center;
+}
+
+.wrap input:nth-child(3){
+	clear: left;
+}
+
+#sb {
+	display: block;
+	margin: 30px auto;
+	line-height: 25px;
+}
+
+
+
+input[type="submit"] {
+	font-family: sans-serif;
+	width: 160px;
+	height: 35px;
+	border: 0px;
+	margin: 0 5px;
+	font-weight: bold;
+	color: #777;
+}
+
+input[type="submit"]:hover {
+	/*border: 1px solid #bbb;*/
+	box-shadow: 0 0 1px 0;
+	/*background-color: #F6F6F6;*/
+	font-weight: bold;
+	color: black;
+	background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f5f5f5 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#f5f5f5 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 );
+}
+
+li {
+	bottom: 0px;
+}
+
+.footer {
+	font-family: "DejaVu Sans";
+	font-size: smaller;
+	line-height: 40px;
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	background-color: #F2F2F2;
+	border-top: 1px solid #ddd
+}
+.footer ul {
+	height: 100%;
+	display: inline-block;
+	list-style-type: none;
+
+}
+.footer a {
+	text-decoration: none;
+}
+
+.left-menu {
+
+	float: left;
+}
+
+.right-menu {
+
+	float: right;
+}
+
+.left-menu li {
+	height: 100%;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.left-menu li:first-child {
+	margin-left: 30px;
+}
+
+
+.right-menu li {
+	height: 100%;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.right-menu li:last-child {
+	margin-right: 30px;
+}
+
+.footer a {
+	color: #555;
+	margin: auto;
+	height: 100%;
+	display: block;
+}
