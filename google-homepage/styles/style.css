@@ -63,6 +63,10 @@ a:hover {
 	top: 25px;
 	right: 66px;
 }
+
+
+
+
 #bell {
 	vertical-align: middle;
 	height: 22px;
@@ -71,6 +75,10 @@ a:hover {
 	border-radius: 100%;
 	margin-left: 8px;
 	padding: 0;
+}
+
+#bell:hover {
+	background-color:  #000;
 }
 
 .search-form  {
