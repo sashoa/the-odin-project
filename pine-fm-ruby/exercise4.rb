@@ -1,37 +1,43 @@
-# left_beer = 99
-# on_the_wall =
-# while (left_beer > 0 )
-# 	if (left_beer == 1) 
-# 		on_the_wall = "no more"
-# 	else 
-# 		on_the_wall = (left_beer - 1).to_s
-# 	end
-# 	puts  "#{left_beer.to_s} bottles of beer on the wall, #{left_beer.to_s} bottles of beer.
-# Take one down and pass it around, #{on_the_wall} bottles of beer on the wall.\n "
-# left_beer = left_beer - 1
-# end
-# puts  "No more bottles of beer on the wall, no more bottles of beer. 
-# Go to the store and buy some more, 99 bottles of beer on the wall.
-# "
+##---------Weird Beer Song----------##
 
-# ask = "Ask your grandma: "
-# bye = false
-# bye_count = 0
-# while (bye_count < 3)
-# 	puts ask
-# 	say = gets.chomp	
-# 	year = rand(1930 .. 1950)
-# 	if say == "BYE"
-# 		bye_count += 1
-# 		if (bye_count == 3)
-# 			puts "OK, HAVE A NICE DAY. ARE YOU SURE YOU'RE NOT HUNGRY?"
-# 		end
-# 	elsif (say == say.upcase)
-# 		puts "NO, NOT SINCE #{year.to_s}!"
-# 	else  puts "HUH?!  SPEAK UP, SONNY!"
-# 	end
+left_beer = 99
+on_the_wall =
+while (left_beer > 0 )
+	if (left_beer == 1) 
+		on_the_wall = "no more"
+	else 
+		on_the_wall = (left_beer - 1).to_s
+	end
+	puts  "#{left_beer.to_s} bottles of beer on the wall, #{left_beer.to_s} bottles of beer.
+Take one down and pass it around, #{on_the_wall} bottles of beer on the wall.\n "
+left_beer = left_beer - 1
+end
+puts  "No more bottles of beer on the wall, no more bottles of beer. 
+Go to the store and buy some more, 99 bottles of beer on the wall.
+"
+
+##-------Deaf Grandma---------##
+
+ask = "Ask your grandma: "
+bye = false
+bye_count = 0
+while (bye_count < 3)
+	puts ask
+	say = gets.chomp	
+	year = rand(1930 .. 1950)
+	if say == "BYE"
+		bye_count += 1
+		if (bye_count == 3)
+			puts "OK, HAVE A NICE DAY. ARE YOU SURE YOU'RE NOT HUNGRY?"
+		end
+	elsif (say == say.upcase)
+		puts "NO, NOT SINCE #{year.to_s}!"
+	else  puts "HUH?!  SPEAK UP, SONNY!"
+	end
 	
-# end
+end
+
+##-------------Leap Years---------------##
 
 puts "Enter start year: "
 start_year = gets.chomp.to_i

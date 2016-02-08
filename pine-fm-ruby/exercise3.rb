@@ -1,6 +1,10 @@
-# puts "What do you want?"
-# answer = gets.chomp
-# puts "WHADDAYA MEAN \"#{answer.upcase}\"?? YOU'RE FIRED!!"
+##-----------The Angry Boss---------##
+
+puts "What do you want?"
+answer = gets.chomp
+puts "WHADDAYA MEAN \"#{answer.upcase}\"?? YOU'RE FIRED!!"
+
+##---------Table of contents-------------##
 
 linewidth = 75
 title = "table of contents"
