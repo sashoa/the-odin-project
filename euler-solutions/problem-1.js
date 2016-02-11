@@ -8,6 +8,6 @@ function euler() {
         i++;
     }
     return sum;
-};
+}
 
-euler();
+console.log(euler());
