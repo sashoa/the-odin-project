@@ -7,13 +7,13 @@ class TicTacToe
     @player_x = Player.new(player1, "X")
     @player_o = Player.new(player2, "O")
   end
-  
+
   # Move method which places X or O on the board
   def move(player, number)
     field = @board.arr[number - 1]
     if field == nil
       @board.arr[number - 1] = player.symbol
-    else 
+    else
       puts "\nThat field is already written, Input number of an empty field:\n"
       number = gets.chomp.to_i
       move(player, number)
@@ -39,7 +39,7 @@ class TicTacToe
     a = arr
     if a[0] != nil && a[0] == a[1] && a[0] == a[2]
       return a[0]
-    elsif a[3] != nil && a[3] == a[4] && a[3] == a[5] 
+    elsif a[3] != nil && a[3] == a[4] && a[3] == a[5]
       return a[3]
     elsif a[6] != nil && a[6] == a[7] && a[6] == a[8]
       return a[6]
@@ -74,15 +74,15 @@ class TicTacToe
   private :combinations, :game_over?, :move
 
   class Player
-   attr_reader :name, :symbol
+    attr_reader :name, :symbol
 
     def initialize(name, symbol)
       @name = name
       @symbol = symbol
     end
-
   end
 
+  # Class representing the X / O Board
   class Board
     attr_accessor :arr
 
@@ -91,19 +91,18 @@ class TicTacToe
     end
 
     def show
-      puts "\n #{@arr[0] || " "} | #{@arr[1] || " "} | #{@arr[2] || " "}"
-      puts "-----------"
-      puts " #{@arr[3] || " "} | #{@arr[4] || " "} | #{@arr[5] || " "}"
-      puts "-----------"
-      puts " #{@arr[6] || " "} | #{@arr[7] || " "} | #{@arr[8] || " "}\n\n"
+      puts "\n #{@arr[0] || ' '} | #{@arr[1] || ' '} | #{@arr[2] || ' '}"
+      puts '-----------'
+      puts " #{@arr[3] || ' '} | #{@arr[4] || ' '} | #{@arr[5] || ' '}"
+      puts '-----------'
+      puts " #{@arr[6] || ' '} | #{@arr[7] || ' '} | #{@arr[8] || ' '}\n\n"
     end
   end
-
 end
 
-puts "Input name for first player (X)"
+puts 'Input name for first player (X)'
 first = gets.chomp
-puts "Input name for second player (O)"
+puts 'Input name for second player (O)'
 second = gets.chomp
 
 game = TicTacToe.new(first, second)
