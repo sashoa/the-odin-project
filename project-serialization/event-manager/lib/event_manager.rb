@@ -8,6 +8,19 @@ def clean_zipcode(zipcode)
   zipcode.to_s.rjust(5, "0")[0..4]
 end
 
+## Cleaning the numbers
+# def clean_phone(number)
+#   number = ""
+#   if number.length < 10
+#    number = "Bad number" 
+#   elsif number.length == 11 && number[0] == "1"
+#     number = number[1..-1]
+#   elsif number.length == 11 && number[0] != "1"
+#     number = "Bad number"
+#   elsif number.length > 11
+#     number = "Bad number"
+# end
+
 def legislators_by_zipcode(zipcode)
   Sunlight::Congress::Legislator.by_zipcode(zipcode)
 end
@@ -34,6 +47,7 @@ lines.each do |row|
   name = row[:first_name]
 
   zipcode = clean_zipcode(row[:zipcode])
+  # phone_number = clean_phone(row[:HomePhone])
 
   legislators = legislators_by_zipcode(zipcode)
 
