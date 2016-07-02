@@ -1,0 +1,11 @@
+<html>
+  <body>
+    <h1>Thanks for Posting!</h1>
+    <h2>Here's what we got from you:</h2>
+    <ul>
+      <% parsed_request[:params].each do |el| %>
+      <li><%= "#{el[0]} name: #{el[1]["name"]} #{el[0]} email: #{el[1]["email"]}" %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
