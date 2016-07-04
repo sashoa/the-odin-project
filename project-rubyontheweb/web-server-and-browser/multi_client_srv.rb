@@ -39,8 +39,6 @@ loop do
       response = "HTTP/1.1 200 OK\n#{Time.new.ctime}\nContent-Length: #{template.size}\r\n\r\n#{z.result(binding)}"
     end
     client.puts response
-    # client.puts(Time.now.ctime)
-    # client.puts(File.open(parsed_request[path]).read)
     client.close
   end
 end
