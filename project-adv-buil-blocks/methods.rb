@@ -1,4 +1,4 @@
-module Enumerable 
+module Enumerable
 
   def my_each
     i = 0
@@ -20,7 +20,7 @@ module Enumerable
 
   def my_select
     a = Array.new
-    self.my_each { |el| a << el if yield(el) } 
+    self.my_each { |el| a << el if yield(el) }
     a
   end
 
@@ -52,8 +52,8 @@ module Enumerable
       if block_given?
         a << yield(el)
       elsif my_proc
-        a << my_proc.call(el) 
-      else return "No block"
+        a << my_proc.call(el)
+      else return 'No block'
       end
     end
     a

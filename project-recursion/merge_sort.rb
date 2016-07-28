@@ -14,7 +14,7 @@ def merge(a,b,arr)
     if a[i] <= b[j]
       arr[k] = a[i]
       i += 1
-    else a[i] > b[j]
+    else
       arr[k] = b[j]
       j += 1
     end
