@@ -1,0 +1,27 @@
+.left {
+  margin-left: 15px;
+}
+.logo {
+  background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflh5pqYQ.webp) -348px -266px;
+  background-size: auto;
+  width: 73px;
+  height: 30px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+
+.logo:hover {
+ height: 100 %;
+}
+
+.hamburger {
+  background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflh5pqYQ.webp) -464px -19px;
+  background-size: auto;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}

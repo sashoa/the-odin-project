@@ -1,5 +1,5 @@
 class TicTacToe
-  attr_accessor :board
+  attr_accessor :board, :player_x, :player_o
 
   def initialize(player1, player2)
     @board = Board.new
@@ -71,7 +71,6 @@ class TicTacToe
     end
   end
 
-  private :combinations, :game_over?, :move
 
   class Player
     attr_reader :name, :symbol
@@ -100,10 +99,10 @@ class TicTacToe
   end
 end
 
-puts 'Input name for first player (X)'
-first = gets.chomp
-puts 'Input name for second player (O)'
-second = gets.chomp
+# puts 'Input name for first player (X)'
+# first = gets.chomp
+# puts 'Input name for second player (O)'
+# second = gets.chomp
 
-game = TicTacToe.new(first, second)
-game.start
+# game = TicTacToe.new(first, second)
+# game.start
