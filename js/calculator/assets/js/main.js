@@ -47,8 +47,11 @@ var store = [];
 var result
 var screenElement = document.getElementById("screen")
 var currentNum = ""
+var done = false;
 
 function press(char){
+  if (done) screenElement.innerHTML = "";
+  done = false;
   if (!isNaN(char)){
     currentNum += char
     screen(char);
@@ -59,6 +62,7 @@ function press(char){
     screenElement.innerHTML = "";
   }
   else if (char === "="){
+    done = true;
     store.push(currentNum);
     currentNum = "";
     screenElement.innerHTML = "";
@@ -77,11 +81,10 @@ function action(){
   var second = parseInt(store[2]);
   switch (store[1]) {
     case "+":
-      i += 2;
       result = add(first, second)
       store = [];
       break;
-  
+
     case "-":
       result = subtract(first, second)
       store = [];
